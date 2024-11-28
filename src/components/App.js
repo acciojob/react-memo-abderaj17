@@ -29,7 +29,7 @@ function App() {
   return (
     <div id='main'>
       <h1>Todo List</h1>
-      <button id='add-todo-btn' onClick={addTodo}>Add todo</button>
+      <button id='add-todo-btn' onClick={addTodo}>Add Todo</button>
       <button id='incr-cnt' onClick={() => setCount(count + 1)}>Increment</button>
       <p>Counter: {count}</p>
 
