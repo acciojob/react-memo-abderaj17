@@ -27,15 +27,16 @@ function App() {
   };
 
   return (
-    <div>
+    <div id='main'>
       <h1>Todo List</h1>
-      <button onClick={addTodo}>Add todo</button>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button id='add-todo-btn' onClick={addTodo}>Add todo</button>
+      <button id='incr-cnt' onClick={() => setCount(count + 1)}>Increment</button>
       <p>Counter: {count}</p>
 
       <input
         type="text"
         value={inputValue}
+        id='skill-input'
         onChange={handleInputChange}
         placeholder="Add a custom task"
       />
